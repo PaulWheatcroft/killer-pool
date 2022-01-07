@@ -68,14 +68,13 @@
 
     .setupgamebtn {
         font-size: 1.2rem;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 5%;
     }
 
     .rulesbtn {
         font-size: 1.2rem;
-        padding-left: 5%;
-        padding-right: 5%;
+            padding: 5%;
+        
     }
 
  }
