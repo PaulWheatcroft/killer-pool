@@ -5,7 +5,7 @@
      background-image: url(../img/pooltable-bg.png);
      background-repeat: no-repeat;
      background-attachment: scroll;
-     background-size: cover; 
+     background-size: cover;
      background-position: center;
      font-family: 'Roboto Slab', serif;
  }
@@ -36,7 +36,7 @@
      padding-left: 1rem;
      padding-right: 1rem;
      padding-bottom: 3.5rem;
-     
+
  }
 
  .setupgamebtn {
@@ -61,21 +61,13 @@
 
  @media (max-width: 380px) {
      .setupgamebtn {
-         background-color: #33F913;
-         color: black;
          font-size: 1.3rem;
          padding: 1.1rem 2.8rem;
-         filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
      }
- }
 
- @media (max-width: 380px) {
      .rulesbtn {
-         background-color: #F4EB00;
-         color: rgb(0, 0, 0);
+
          font-size: 1.2rem;
          padding: 1rem 2rem;
-         margin-bottom: 10rem;
-         filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
      }
  }
