@@ -25,7 +25,7 @@
  }
 
  .logoimg {
-     width: auto;
+     max-width: auto;
      position: relative;
  }
 
@@ -59,17 +59,23 @@
  }
 
 
- /* @media (max-width: 380px) {
-     .setupgamebtn {
-         font-size: 1.3rem;
-         padding: 1.1rem 2.8rem;
-     }
+ @media (max-width: 300px) {
+    
+    .logoimg {
+        width: 8rem;
+        position: relative;
+    }
 
-     .rulesbtn {
+    .setupgamebtn {
+        font-size: 1.2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-         font-size: 1.2rem;
-         padding: 1rem 2rem;
-     }
+    .rulesbtn {
+        font-size: 1.2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-     
- } */
+ }
