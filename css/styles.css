@@ -1,0 +1,73 @@
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #169ED8;
+     font-family: 'Roboto Slab', serif;
+ }
+
+ .main {
+     position: relative;
+     background: url(../img/pooltable-bg.png) top no-repeat scroll;
+     background-size: auto;
+     margin-top: 0%;
+ }
+
+ .logo-container {
+     text-align: center;
+     margin: 0;
+     padding-top: 8rem;
+     padding-bottom: 2rem;
+ }
+
+ .logoimg {
+     width: auto;
+     position: relative;
+ }
+
+ .setup,
+ .rules {
+     text-align: center;
+     margin: 0;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     padding-bottom: 3.5rem;
+ }
+
+ .setupgamebtn {
+     background-color: #33F913;
+     color: black;
+     font-size: 1.8rem;
+     padding: 1.1rem 2.8rem;
+     filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
+ }
+
+ .rulesbtn {
+     background-color: #F4EB00;
+     color: rgb(0, 0, 0);
+     font-size: 1.2rem;
+     padding: 0.5rem 5rem;
+     margin-bottom: 10rem;
+     filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
+ }
+
+
+ @media (max-width: 380px) {
+     .setupgamebtn {
+         background-color: #33F913;
+         color: black;
+         font-size: 1.3rem;
+         padding: 1.1rem 2.8rem;
+         filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
+     }
+ }
+
+ @media (max-width: 380px) {
+     .rulesbtn {
+         background-color: #F4EB00;
+         color: rgb(0, 0, 0);
+         font-size: 1.2rem;
+         padding: 1rem 2rem;
+         margin-bottom: 10rem;
+         filter: drop-shadow(0mm 2mm 0.5rem rgb(73, 70, 71));
+     }
+ }
