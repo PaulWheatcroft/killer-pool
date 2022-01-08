@@ -1,7 +1,7 @@
  body {
      margin: 0;
      padding: 0;
-     background-color: #169ED8;
+     
      background-image: url(../img/pooltable-bg.png);
      background-repeat: no-repeat;
      background-attachment: scroll;
@@ -18,6 +18,11 @@
      margin-top: 0%;
  }
 
+ .mainpage{
+    background-color: #169ED8;
+    height: 100vh;
+ }
+
  .logo-container {
      text-align: center;
      margin: 0;
@@ -25,18 +30,41 @@
      padding-bottom: 2rem;
  }
 
+ .logo-container-mainpage{
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+ }
+
  .logoimg {
      max-width: auto;
      position: relative;
  }
 
+ .logoimg_mainpage{
+    width: 15rem;
+ }
+
  .setup,
- .rules {
+ .rules,
+ .enterplayernamecontainer,
+ .addplayercontainer,
+ .startgamecontainer
+ {
      text-align: center;
      margin: 0;
      padding: 0;
      padding-bottom: 3.5rem;
 
+ }
+
+ .addplayercontainer
+ {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.5rem;
  }
 
  .setupgamebtn {
@@ -58,23 +86,55 @@
      border-style: none;
  }
 
+ .addplayerbtn {
+    background-color: #33F913;
+    color: black;
+    font-size: 1.8rem;
+    padding: 1.0rem 1.8rem;
+    filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
+    border-style: none;
+}
+
+.startgamebtn {
+    background-color: #F4EB00;
+    color: black;
+    font-size: 1.8rem;
+    padding: 1.0rem 1.8rem;
+    filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
+    border-style: none;
+}
+
+.form-control{
+ 
+}
+
+.playernametextfield{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1.0rem;
+    background-color: silver;
+    filter: drop-shadow(0mm -1.3mm 0.1rem #0975A7);
+}
+
+.playernamelablel{
+    font-size: 1.3rem;
+}
 
  @media (max-width: 300px) {
     
-    .logoimg {
-        width: 8rem;
-        position: relative;
-    }
+        .logoimg {
+            width: 8rem;
+            position: relative;
+        }
 
-    .setupgamebtn {
-        font-size: 1.2rem;
-        padding: 5%;
-    }
-
-    .rulesbtn {
-        font-size: 1.2rem;
+        .setupgamebtn {
+            font-size: 1.2rem;
             padding: 5%;
-        
-    }
+        }
+
+        .rulesbtn {
+            font-size: 1.2rem;
+            padding: 5%;
+        }
 
  }

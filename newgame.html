@@ -44,27 +44,34 @@
 <body>
 
 
-    <div class="container main">
+    <div class="container mainpage">
 
-        <div class="row logo-container">
+        <div class="row logo-container-mainpage">
             <div class="col-12">
-                <img class="logoimg" src="/img/killerpool-logo.svg">
+                <img class="logoimg_mainpage" src="/img/killerpool-logo.svg">
+            </div>
+        </div>
+       
+        <div class="row enterplayernamecontainer">
+            <form>
+                <div class="form-group">
+                  <label for="playername" class="playernamelablel">Player Name</label>
+                  <input type="text" class="form-control playernametextfield" id="id_playername">
+                </div>
+        </div>
+
+        <div class="row addplayercontainer">
+            <div class="col-12">
+                <button type="button" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
             </div>
         </div>
 
-        <div class="row setup">
+        <div class="row startgamecontainer">
             <div class="col-12">
-                <a href="newgame.html"><button type="button" id="id_setupgamebtn" class="btn btn-dark btn-lg setupgamebtn text-nowrap">Set up a
-                    game</button></a>
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start Game</button>
             </div>
         </div>
-
-        <div class="row rules">
-            <div class="col-12">
-                <button type="button" id="id_rulesbtn" class="btn btn-dark btn-lg rulesbtn text-nowrap">View the rules</button>
-            </div>
-        </div>
-
+    
 
     </div>
 
