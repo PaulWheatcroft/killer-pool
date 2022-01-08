@@ -15,3 +15,5 @@ As an in game administrator I want to:
 - Be notified who won and end the game
 - Start a new game with the same players
 - Go back to set up a new game with a different set of players
+
+https://paulwheatcroft.github.io/killer-pool/
