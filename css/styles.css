@@ -18,9 +18,11 @@
      margin-top: 0%;
  }
 
- .mainpage{
+ .container-mainpage{
     background-color: #169ED8;
     height: 100vh;
+    text-align: center;
+    margin: 0;
  }
 
  .logo-container {
