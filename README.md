@@ -17,3 +17,7 @@ As an in game administrator I want to:
 - Go back to set up a new game with a different set of players
 
 https://paulwheatcroft.github.io/killer-pool/
+
+
+# Acknowledgements
+Shuffling the player order https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array

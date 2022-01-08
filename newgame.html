@@ -61,28 +61,30 @@
         </div>
        
         <div class="row enterplayernamecontainer">
-            <form>
+            <form ACTION="" METHOD="GET">
                 <div class="form-group">
                   <label for="playername" class="playernamelablel">Player Name</label>
                   <input type="text" size="30" class="form-control playernametextfield" id="id_playername">
                 </div>
+            </form>
         </div>
 
         <div class="row addplayercontainer">
             <div class="col-12">
-                <button type="button" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
+                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap" onclick="addPlayer()">Add Player</button>
             </div>
         </div>
+       
 
         <div class="row startgamecontainer">
             <div class="col-12">
-                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start Game</button>
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap" onclick="randomizeOrder(players)">Start Game</button>
             </div>
         </div>
     
 
     </div>
-
+    <script src="scripts/killer.js"></script>
 </body>
 
 </html>
