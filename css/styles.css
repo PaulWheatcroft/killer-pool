@@ -106,6 +106,13 @@
     border-style: none;
 }
 
+.form-group{
+    margin: 0 auto;
+    width: auto;
+    max-width: 25rem;
+    text-align: center;
+}
+
 
 .playernametextfield{
     font-size: 1.5rem;
