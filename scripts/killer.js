@@ -1,3 +1,5 @@
+console.log("script is running")
+
 const players = [];
 
 function addPlayer() {
