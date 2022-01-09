@@ -129,6 +129,49 @@
     font-size: 1.3rem;
 }
 
+.playercont{
+    text-align: right;
+}
+
+.logo-container-viewpage{
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+ }
+
+
+.player1-live1,
+.player1-live2,
+.player1-live3,
+.player1-live4,
+.player1-live5,
+.player1-live6,
+.player1-addremove{
+        margin: 2%; 
+        width: 3.0rem;
+        height: 3.0rem;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background: white;
+}
+
+.player1-addremove
+{
+    background: black;
+}
+
+ul,li{
+    display: flex;
+    justify-content: center;
+}
+
+.viewpagecolmargin{
+    margin-top: 1rem;
+}
+
+
  @media (max-width: 300px) {
     
         .logoimg {
@@ -145,5 +188,25 @@
             font-size: 1.2rem;
             padding: 5%;
         }
+
+ }
+
+ @media (max-width: 440px) {
+    .player1-live1,
+    .player1-live2,
+    .player1-live3,
+    .player1-live4,
+    .player1-live5,
+    .player1-live6,
+    .player1-addremove{
+
+        width: 1.8rem;
+        height: 1.8rem;
+    }    
+
+    .logoimg_mainpage {
+        width: 12rem;
+        position: relative;
+    }
 
  }

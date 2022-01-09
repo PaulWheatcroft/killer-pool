@@ -52,33 +52,40 @@
 <body>
 
 
-    <div class="container-mainpage">
+    <div class="container-fluid container-mainpage">
 
-        <div class="row logo-container-mainpage">
+        <div class="row logo-container-viewpage">
             <div class="col-12">
                 <img class="logoimg_mainpage" src="img/killerpool-logo.svg">
             </div>
         </div>
        
-        <div class="row enterplayernamecontainer">
-            <form ACTION="" METHOD="GET">
-                <div class="form-group">
-                  <label for="playername" class="playernamelabel">Player Name</label>
-                  <input type="text" size="30" class="form-control playernametextfield" id="id_playername">
-                </div>
-            </form>
+
+        <div class="row justify-content-center player1row playernamelabel">
+            <p>Player 1</p>
         </div>
 
-        <div class="row addplayercontainer">
-            <div class="col-12">
-                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap" onclick="addPlayer()">Add Player</button>
+        <div class="row justify-content-center player1row">
+            
+         <ul>
+             <li>
+            <div class="col-2 player1-live1"></div>
+            <div class="col-2 player1-live2"></div>
+            <div class="col-2 player1-live3"></div>
+            <div class="col-2 player1-live4"></div>
+            <div class="col-2 player1-live5"></div>
+            <div class="col-2 player1-live6"></div>
+            <div class="col-2 player1-addremove"></div>
+            </li>
+        </ul>       
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 viewpagecolmargin">
+                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
             </div>
-        </div>
-       
-
-        <div class="row startgamecontainer">
-            <div class="col-12">
-                <a href="viewgame.html"><button type="button" id="id_viewgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap" onclick="randomizeOrder(players)">View Game</button></a>
+            <div class="col-md-4 viewpagecolmargin">
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start Game</button>
             </div>
         </div>
     
