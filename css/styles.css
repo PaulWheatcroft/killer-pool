@@ -226,6 +226,21 @@ ul,li{
     }    
  }
 
+ @media (max-width: 391px) {
+    .player1-live1,
+    .player1-live2,
+    .player1-live3,
+    .player1-live4,
+    .player1-live5,
+    .player1-live6,
+    .player1-addremove{
+
+        width: 2.7rem;
+        height: 2.7rem;
+    }    
+ }
+
+
  @media (max-width: 376px) {
     .player1-live1,
     .player1-live2,
