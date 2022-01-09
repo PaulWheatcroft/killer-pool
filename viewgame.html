@@ -59,36 +59,40 @@
                 <img class="logoimg_mainpage" src="img/killerpool-logo.svg">
             </div>
         </div>
-       
 
-        <div class="row justify-content-center player1row playernamelabel">
-            <p>Player 1</p>
-        </div>
 
-        <div class="row justify-content-center player1row">
-            
-         <ul>
-             <li>
-            <div class="col-2 player1-live1"></div>
-            <div class="col-2 player1-live2"></div>
-            <div class="col-2 player1-live3"></div>
-            <div class="col-2 player1-live4"></div>
-            <div class="col-2 player1-live5"></div>
-            <div class="col-2 player1-live6"></div>
-            <div class="col-2 player1-addremove"></div>
-            </li>
-        </ul>       
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-12">
+                    <div class="row">
+
+                        <p class="col-12 playernamelabel">Player 1</p>
+
+                    </div>
+                    <div class="row justify-content-center" id="player0">
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life life-add-remove"><i class="fas fa-trash-alt"></i></div>
+                    </div>
+            </ul>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-md-4 viewpagecolmargin">
-                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn" class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
+                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn"
+                    class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
             </div>
             <div class="col-md-4 viewpagecolmargin">
-                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start Game</button>
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start
+                    Game</button>
             </div>
         </div>
-    
+
 
     </div>
     <script src="scripts/killer.js"></script>
