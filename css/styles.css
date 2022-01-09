@@ -212,7 +212,7 @@ ul,li{
  }
 
 
- @media (max-width: 429px) {
+ @media (max-width: 415px) {
     .player1-live1,
     .player1-live2,
     .player1-live3,
@@ -221,8 +221,8 @@ ul,li{
     .player1-live6,
     .player1-addremove{
 
-        width: 2.3rem;
-        height: 2.3rem;
+        width: 2.9rem;
+        height: 2.9rem;
     }    
  }
 
