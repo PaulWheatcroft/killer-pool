@@ -1,15 +1,12 @@
 console.log("script is running")
 
-const players = [];
-
-function addPlayer() {
+function addPlayer() {    
     playerName = document.getElementById('id_playername').value;
     players.push({
         "name": playerName,
         "score": 5
     })
     document.getElementById('id_playername').value = ""
-    window.alert(`Player ${playerName} added to the game`);
     console.log(players)
     return players
 }
@@ -31,6 +28,5 @@ function randomizeOrder(players) {
             players[randomIndex], players[currentIndex]
         ];
     }
-    console.log(players)
-    return players;
+    localStorage.setItem("playersArray", JSON.stringify(players));
 }

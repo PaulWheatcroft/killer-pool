@@ -62,40 +62,45 @@
 
 
 
-
-        <div class="row justify-content-center">
+        <!-- All Players added as a chile of to this div -->
+        <div id="player-list" class="row justify-content-center">
 
             <div class="col-12">
-                    <div class="row">
+                <div class="row">
+                    <p class="col-12 playernamelabel">Player 1</p>
+                </div>
+                <div class="row justify-content-center" id="player0">
+                    <div class="col-2 player-life"></div>
+                    <div class="col-2 player-life"></div>
+                    <div class="col-2 player-life"></div>
+                    <div class="col-2 player-life"></div>
+                    <div class="col-2 player-life"></div>
+                    <div class="col-2 player-life life-add-remove"><i class="fas fa-trash-alt"></i></div>
+                </div>
+            </div>
 
-                        <p class="col-12 playernamelabel">Player 1</p>
-
-                    </div>
-                    <div class="row justify-content-center" id="player0">
-                        <div class="col-2 player-life"></div>
-                        <div class="col-2 player-life"></div>
-                        <div class="col-2 player-life"></div>
-                        <div class="col-2 player-life"></div>
-                        <div class="col-2 player-life"></div>
-                        <div class="col-2 player-life life-add-remove"><i class="fas fa-trash-alt"></i></div>
-                    </div>
-            </ul>
         </div>
 
         <div class="row justify-content-center">
             <div class="col-md-4 viewpagecolmargin">
-                <button type="button" name="id_addplayerbtn" id="id_addplayerbtn"
-                    class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</button>
+                <a href="newgame.html" name="id_addplayerbtn" id="id_addplayerbtn"
+                    class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</a>
             </div>
             <div class="col-md-4 viewpagecolmargin">
-                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap">Start
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
+                    onclick="showPlayers()">Start
+                    Game</button>
+            </div>
+            <div class="col-md-4 viewpagecolmargin">
+                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
+                    onclick="clearLocalStorage()">Clear
                     Game</button>
             </div>
         </div>
 
 
     </div>
-    <script src="scripts/killer.js"></script>
+    <script src="scripts/view.js"></script>
 </body>
 
 </html>
