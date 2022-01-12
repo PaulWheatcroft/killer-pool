@@ -151,11 +151,42 @@ body {
     margin: 5px;
     height: 2.5rem;
     width: 2.5rem;
-    ;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background: white;
+}
+
+.life-1 {
+    background-color: #F91313;
+}
+
+.life-2 {
+    background-color: #F96613;
+}
+
+.life-3 {
+    background-color: #F9C613;
+}
+
+.life-4 {
+    background-color: #AFF913;
+}
+
+.life-5 {
+    background-color: #33F913;
+}
+
+.life-down {
+    background-color: #3A3A3A;
+    box-shadow: inset 0px 10px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.life-done {
+    background-color: #3A3A3A;
+    box-shadow: inset 0px 10px 1px 0px rgba(0, 0, 0, 0.5);
+    line-height: 2.5rem;
+    color: antiquewhite;
 }
 
 .life-add-remove {

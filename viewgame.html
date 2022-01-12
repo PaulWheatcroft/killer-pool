@@ -49,7 +49,7 @@
     <title>Killer Pool</title>
 </head>
 
-<body>
+<body onload="showPlayers()">
 
 
     <div class="container-fluid container-mainpage">
@@ -74,13 +74,13 @@
             </div>
             <div class="col-md-4 viewpagecolmargin">
                 <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
-                    onclick="showPlayers()">Start
+                    onclick="startGame()">Start
                     Game</button>
             </div>
             <div class="col-md-4 viewpagecolmargin">
-                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
+                <a href="newgame.html" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
                     onclick="clearLocalStorage()">Clear
-                    Game</button>
+                    Game</a>
             </div>
         </div>
 

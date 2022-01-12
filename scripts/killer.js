@@ -1,15 +1,19 @@
 console.log("script is running");
 
-players = [];
-localPlayersArray = (JSON.parse(localStorage.getItem("playersArray")));
+let players = [];
+let localPlayersArray = (JSON.parse(localStorage.getItem("playersArray")));
 
 console.log(localPlayersArray)
 
 function addPlayer() {
     console.log(`**** ${players}`);
-    if(localPlayersArray > players)
+    if (localPlayersArray > players) {
         players = localPlayersArray
-    playerName = document.getElementById('id_playername').value;
+    }        
+    let playerName = document.getElementById('id_playername').value;
+    if (playerName.length < 1) {
+        return
+    }        
     players.push({
         "name": playerName,
         "score": 5
