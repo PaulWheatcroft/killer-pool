@@ -1,101 +1,104 @@
- body {
-     margin: 0;
-     padding: 0;
-     background-color: #169ED8;
-     background-image: url(../img/pooltable-bg.png);
-     background-repeat: no-repeat;
-     background-attachment: local;
-     background-size: cover;
-     background-position: center;
-     font-family: 'Roboto Slab', serif;
-     height: 100vh;
- }
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
 
- .main {
-     position: relative;
-     background-size: auto;
-     margin-top: 0%;
- }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #169ED8;
+    background-image: url(../img/pooltable-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+}
 
- .container-mainpage{
+.main {
+    position: relative;
+    background-size: auto;
+    margin-top: 0%;
+}
+
+.container-mainpage {
     background-color: #169ED8;
     height: 100vh;
     text-align: center;
     margin: 0;
- }
+}
 
- .logo-container {
-     text-align: center;
-     margin: 0;
-     padding-top: 8rem;
-     padding-bottom: 2rem;
- }
+.logo-container {
+    text-align: center;
+    margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
 
- .logo-container-mainpage{
+.logo-container-mainpage {
     text-align: center;
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 8rem;
- }
+}
 
- .logoimg {
-     max-width: auto;
-     position: relative;
- }
+.logoimg {
+    max-width: auto;
+    position: relative;
+}
 
- .logoimg_mainpage{
+.logoimg_mainpage {
     width: 15rem;
- }
+}
 
- .setup,
- .enterplayernamecontainer,
- .addplayercontainer
- {
-     text-align: center;
-     margin: 0;
-     padding: 0;
-     padding-bottom: 3rem;
- }
-
- .rules,
- .startgamecontainer{
+.setup,
+.enterplayernamecontainer,
+.addplayercontainer {
     text-align: center;
     margin: 0;
     padding: 0;
- }
+    padding-bottom: 3rem;
+}
 
- .addplayercontainer
- {
+.rules,
+.startgamecontainer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.addplayercontainer {
     text-align: center;
     margin: 0;
     padding: 0;
     padding-bottom: 1.5rem;
- }
+}
 
- .setupgamebtn {
-     background-color: #33F913;
-     color: black;
-     font-size: 1.8rem;
-     padding: 1.1rem 1.8rem;
-     filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
-     border-style: none;
- }
+.setupgamebtn {
+    background-color: #33F913;
+    color: black;
+    font-size: 1.8rem;
+    padding: 1.1rem 1.8rem;
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    border-style: none;
+}
 
- .rulesbtn {
-     background-color: #F4EB00;
-     color: rgb(0, 0, 0);
-     font-size: 1.2rem;
-     padding: 0.5rem 3.6rem;
-     filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
-     border-style: none;
- }
+.rulesbtn {
+    background-color: #F4EB00;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0.5rem 3.6rem;
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    border-style: none;
+}
 
- .addplayerbtn {
+.addplayerbtn {
     background-color: #33F913;
     color: black;
     font-size: 1.8rem;
     padding: 1.0rem 1.8rem;
-    filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
     border-style: none;
 }
 
@@ -104,11 +107,12 @@
     color: black;
     font-size: 1.8rem;
     padding: 1.0rem 1.8rem;
-    filter: drop-shadow(0mm 1.3mm 0.1rem #0975A7);
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
     border-style: none;
 }
 
-.form-group{
+.form-group {
     margin: 0 auto;
     width: auto;
     max-width: 25rem;
@@ -116,156 +120,192 @@
 }
 
 
-.playernametextfield{
+.playernametextfield {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     margin-top: 1.0rem;
     background-color: silver;
-    filter: drop-shadow(0mm -1.3mm 0.1rem #0975A7);
     text-align: center;
+    -webkit-box-shadow: inset 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
-.playernamelabel{
-    font-size: 1.3rem;
+.playernamelabel {
+    font-family: 'Risque', cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
-.playercont{
+.playercont {
     text-align: right;
 }
 
-.logo-container-viewpage{
+.logo-container-viewpage {
     text-align: center;
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 4rem;
- }
-
-
-.player1-live1,
-.player1-live2,
-.player1-live3,
-.player1-live4,
-.player1-live5,
-.player1-live6,
-.player1-addremove{
-        margin: 2%; 
-        width: 3.5rem;
-        height: 3.5rem;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        border-radius: 25px;
-        background: white;
 }
 
-.player1-addremove
-{
+.player-life {
+    margin: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: white;
+}
+
+.life-1 {
+    background-color: #F91313;
+}
+
+.life-2 {
+    background-color: #F96613;
+}
+
+.life-3 {
+    background-color: #F9C613;
+}
+
+.life-4 {
+    background-color: #AFF913;
+}
+
+.life-5 {
+    background-color: #33F913;
+}
+
+.life-down {
+    background-color: #3A3A3A;
+    box-shadow: inset 0px 10px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.life-done {
+    background-color: #3A3A3A;
+    box-shadow: inset 0px 10px 1px 0px rgba(0, 0, 0, 0.5);
+    line-height: 2.5rem;
+    color: antiquewhite;
+}
+
+.life-add-remove {
     background: black;
+    line-height: 2.5rem;
+    color: antiquewhite;
 }
 
-ul,li{
+ul,
+li {
     display: flex;
     justify-content: center;
 }
 
-.viewpagecolmargin{
+.viewpagecolmargin {
     margin-top: 1rem;
 }
 
-
+/*
  @media (max-width: 300px) {
-    
-        .logoimg {
-            width: 8rem;
-            position: relative;
-        }
 
-        .setupgamebtn {
-            font-size: 1.2rem;
-            padding: 5%;
-        }
+     .logoimg {
+         width: 8rem;
+         position: relative;
+     }
 
-        .rulesbtn {
-            font-size: 1.2rem;
-            padding: 5%;
-        }
+     .setupgamebtn {
+         font-size: 1.2rem;
+         padding: 5%;
+     }
+
+     .rulesbtn {
+         font-size: 1.2rem;
+         padding: 5%;
+     }
 
  }
 
  @media (max-width: 490px) {
-    .player1-live1,
-    .player1-live2,
-    .player1-live3,
-    .player1-live4,
-    .player1-live5,
-    .player1-live6,
-    .player1-addremove{
 
-        width: 3.0rem;
-        height: 3.0rem;
-    }    
+     .player1-live1,
+     .player1-live2,
+     .player1-live3,
+     .player1-live4,
+     .player1-live5,
+     .player1-live6,
+     .player1-addremove {
 
-    .logoimg_mainpage {
-        width: 12rem;
-        position: relative;
-    }
+         width: 3.0rem;
+         height: 3.0rem;
+     }
+
+     .logoimg_mainpage {
+         width: 12rem;
+         position: relative;
+     }
 
  }
 
 
  @media (max-width: 415px) {
-    .player1-live1,
-    .player1-live2,
-    .player1-live3,
-    .player1-live4,
-    .player1-live5,
-    .player1-live6,
-    .player1-addremove{
 
-        width: 2.9rem;
-        height: 2.9rem;
-    }    
+     .player1-live1,
+     .player1-live2,
+     .player1-live3,
+     .player1-live4,
+     .player1-live5,
+     .player1-live6,
+     .player1-addremove {
+
+         width: 2.9rem;
+         height: 2.9rem;
+     }
  }
 
  @media (max-width: 391px) {
-    .player1-live1,
-    .player1-live2,
-    .player1-live3,
-    .player1-live4,
-    .player1-live5,
-    .player1-live6,
-    .player1-addremove{
 
-        width: 2.7rem;
-        height: 2.7rem;
-    }    
+     .player1-live1,
+     .player1-live2,
+     .player1-live3,
+     .player1-live4,
+     .player1-live5,
+     .player1-live6,
+     .player1-addremove {
+
+         width: 2.7rem;
+         height: 2.7rem;
+     }
  }
 
 
  @media (max-width: 376px) {
-    .player1-live1,
-    .player1-live2,
-    .player1-live3,
-    .player1-live4,
-    .player1-live5,
-    .player1-live6,
-    .player1-addremove{
 
-        width: 2.5rem;
-        height: 2.5rem;
-    }    
+     .player1-live1,
+     .player1-live2,
+     .player1-live3,
+     .player1-live4,
+     .player1-live5,
+     .player1-live6,
+     .player1-addremove {
+
+         width: 2.5rem;
+         height: 2.5rem;
+     }
  }
 
 
  @media (max-width: 329px) {
-    .player1-live1,
-    .player1-live2,
-    .player1-live3,
-    .player1-live4,
-    .player1-live5,
-    .player1-live6,
-    .player1-addremove{
 
-        width: 1.9rem;
-        height: 1.9rem;
-    }    
+     .player1-live1,
+     .player1-live2,
+     .player1-live3,
+     .player1-live4,
+     .player1-live5,
+     .player1-live6,
+     .player1-addremove {
+
+         width: 1.9rem;
+         height: 1.9rem;
+     }
  }
+ */

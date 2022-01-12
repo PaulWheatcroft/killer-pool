@@ -1,17 +1,26 @@
-console.log("script is running")
+console.log("script is running");
 
-const players = [];
+let players = [];
+let localPlayersArray = (JSON.parse(localStorage.getItem("playersArray")));
+
+console.log(localPlayersArray)
 
 function addPlayer() {
-    playerName = document.getElementById('id_playername').value;
+    console.log(`**** ${players}`);
+    if (localPlayersArray > players) {
+        players = localPlayersArray
+    }        
+    let playerName = document.getElementById('id_playername').value;
+    if (playerName.length < 1) {
+        return
+    }        
     players.push({
         "name": playerName,
         "score": 5
-    })
-    document.getElementById('id_playername').value = ""
-    window.alert(`Player ${playerName} added to the game`);
-    console.log(players)
-    return players
+    });
+    document.getElementById('id_playername').value = "";
+    console.log(players);
+    return players;
 }
 
 // Taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -31,6 +40,5 @@ function randomizeOrder(players) {
             players[randomIndex], players[currentIndex]
         ];
     }
-    console.log(players)
-    return players;
+    localStorage.setItem("playersArray", JSON.stringify(players));
 }
