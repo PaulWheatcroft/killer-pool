@@ -56,33 +56,28 @@
 
         <div class="row logo-container-viewpage">
             <div class="col-12">
-                <img class="logoimg_mainpage" src="img/killerpool-logo.svg">
+                <img class="logoimg_viewpage" src="img/killerpool-logo.svg">
             </div>
         </div>
 
+        <div class="row gui_row">
+
+            <a class="col-4" href="newgame.html" name="id_addplayerbtn"><button class="btn btn-primary btn_custom" type="button"><i class="fa fa-user"></i></button></a>
+
+           <a class="col-4" href="#"><button class="btn btn-success btn_custom" type="button" id="id_startgamebtn" onclick="startGame()"><i class="fa fa-solid fa-play"></i></button></a>
+
+            <a class="col-4" href="newgame.html" id="id_startgamebtn"><button class="btn btn-danger btn_custom"  type="button" id="id_startgamebtn" onclick="clearLocalStorage()"><i class="fas fa-trash"></i></button></a>
+  
+            
+        </div>
 
 
         <!-- All Players added as a chile of to this div -->
-        <div id="player-list" class="row justify-content-center">
+        <div id="player-list" class="row justify-content-center player-row">
 
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-4 viewpagecolmargin">
-                <a href="newgame.html" name="id_addplayerbtn" id="id_addplayerbtn"
-                    class="btn btn-dark btn-lg addplayerbtn text-nowrap">Add Player</a>
-            </div>
-            <div class="col-md-4 viewpagecolmargin">
-                <button type="button" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
-                    onclick="startGame()">Restart
-                    Game</button>
-            </div>
-            <div class="col-md-4 viewpagecolmargin">
-                <a href="newgame.html" id="id_startgamebtn" class="btn btn-dark btn-lg startgamebtn text-nowrap"
-                    onclick="clearLocalStorage()">Clear
-                    Game</a>
-            </div>
-        </div>
+      
 
 
     </div>

@@ -49,6 +49,10 @@ body {
     width: 15rem;
 }
 
+.logoimg_viewpage {
+    width: 12rem;
+}
+
 .setup,
 .enterplayernamecontainer,
 .addplayercontainer {
@@ -63,6 +67,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    padding-bottom: 2rem;
 }
 
 .addplayercontainer {
@@ -133,7 +138,8 @@ body {
 .playernamelabel {
     font-family: 'Risque', cursive;
     font-size: 2rem;
-    margin-bottom: 0;
+    padding: 0;
+    margin-top: 2rem;
 }
 
 .playercont {
@@ -195,15 +201,67 @@ body {
     color: antiquewhite;
 }
 
-ul,
-li {
-    display: flex;
-    justify-content: center;
-}
-
 .viewpagecolmargin {
     margin-top: 1rem;
 }
+
+/* UI buttons */
+
+.gui_row{
+    margin-bottom: 1rem;
+}
+
+.btn_custom{
+    width: 4rem;
+    font-size: 2rem;
+    border-color: black;
+    border-width: 1px;
+}
+
+/* add player button */
+
+.btn-primary{
+    color: black;
+    background-color: #f9c613;
+    
+}
+
+.btn-primary:hover{
+    border-color: white;
+    background-color: #f9c613;
+}
+
+/* play button */
+
+.btn-success{
+    background-color: #33f913;
+    color: black;
+}
+
+.btn-success:focus{
+    background-color: #33f913;
+    color: black;
+}
+
+.btn-success:hover{
+    background-color: #33f913;
+    color: white;
+    border-color: white;
+}
+
+/*delete button */
+
+.btn-danger{
+    background-color: #f91313;
+    color: black;
+}
+
+.btn-danger:hover{
+    background-color: #f91313;
+    color: white;
+    border-color: white;
+}
+
 
 /*
  @media (max-width: 300px) {
