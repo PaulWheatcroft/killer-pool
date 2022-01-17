@@ -139,7 +139,7 @@ body {
     font-family: 'Risque', cursive;
     font-size: 2rem;
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .playercont {
@@ -208,14 +208,17 @@ body {
 /* UI buttons */
 
 .gui_row{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .btn_custom{
     width: 4rem;
-    font-size: 2rem;
-    border-color: black;
-    border-width: 1px;
+    height: 4rem;
+    font-size: 1.7rem;
+    -webkit-box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    border-style: none;
+    border-radius: 50%;
 }
 
 /* add player button */
