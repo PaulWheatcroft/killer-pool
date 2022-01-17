@@ -209,6 +209,10 @@ body {
 
 .gui_row{
     margin-bottom: 2rem;
+    width: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+
 }
 
 .btn_custom{
