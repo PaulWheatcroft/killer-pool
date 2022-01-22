@@ -25,6 +25,9 @@ function addPlayer() {
 
 // Taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function randomizeOrder(players) {
+    if (players.length == 0) {
+        return
+    }
     let currentIndex = players.length,
         randomIndex;
 
