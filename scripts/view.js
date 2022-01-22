@@ -66,7 +66,14 @@ function removeLife(playerId, lifeId) {
     console.log(nextLifeId)
     let clickedLife = document.getElementById(`life-${playerId}-${lifeId}`);
     let nextLife = document.getElementById(`life-${playerId}-${nextLifeId}`);
-    if (lifeId == 1) {
+    if (lifeId > 1) {
+        console.log(clickedLife);
+        console.log(nextLife);
+        clickedLife.classList.remove(`life-${lifeId}`);
+        clickedLife.classList.add("life-down");
+        clickedLife.removeAttribute("onclick");
+        nextLife.setAttribute("onclick", `removeLife(${(playerId)}, ${nextLifeId})`);
+    } else {
         console.log("You're a gonna!");
         let noMoreLivesHTML = document.getElementById(`lives-${playerId}`);
         noMoreLivesHTML.innerHTML = `
@@ -77,14 +84,7 @@ function removeLife(playerId, lifeId) {
                     <div id="life-${(player)}-5" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
                     <div class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
                     `
-    } else {
-        console.log(clickedLife);
-        console.log(nextLife);
-        clickedLife.classList.remove(`life-${lifeId}`);
-        clickedLife.classList.add("life-down");
-        clickedLife.removeAttribute("onclick");
-        nextLife.setAttribute("onclick", `removeLife(${(playerId)}, ${nextLifeId})`);
-    }
+    } 
 }
 
 function clearLocalStorage() {
