@@ -77,11 +77,11 @@ function removeLife(playerId, lifeId) {
         console.log("You're a gonna!");
         let noMoreLivesHTML = document.getElementById(`lives-${playerId}`);
         noMoreLivesHTML.innerHTML = `
-                    <div id="life-${(player)}-0" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
-                    <div id="life-${(player)}-1" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
-                    <div id="life-${(player)}-2" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
-                    <div id="life-${(player)}-3" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
-                    <div id="life-${(player)}-4" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
+                    <div id="life-${(player)}--1" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
+                    <div id="life-${(player)}--2" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
+                    <div id="life-${(player)}--3" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
+                    <div id="life-${(player)}--4" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
+                    <div id="life-${(player)}--5" class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
                     <div class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
                     `
     } 
