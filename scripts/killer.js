@@ -8,6 +8,9 @@ console.log(localPlayersArray)
 function addPlayer() {
     console.log(`**** ${players}`);
     if (localPlayersArray > players) {
+        for (currentPlayer in localPlayersArray) {
+            localPlayersArray[currentPlayer].score = 5;
+        }
         players = localPlayersArray
     }        
     let playerName = document.getElementById('id_playername').value;
