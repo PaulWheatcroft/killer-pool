@@ -61,8 +61,7 @@
 
         <div class="row setup">
             <div class="col-12">
-                <a href="newgame.html"><button type="button" id="id_setupgamebtn" class="btn btn-dark btn-lg setupgamebtn text-nowrap">Set up a
-                    game</button></a>
+                <button type="button" id="id_setupgamebtn" class="btn btn-dark btn-lg setupgamebtn text-nowrap" onclick="clearLocalStorage(); location.href='newgame.html';">Set up a game</button>
             </div>
         </div>
 
@@ -77,6 +76,7 @@
 
 
     <script src="scripts/killer.js"></script>
+    <script src="scripts/view.js"></script>
 </body>
 
 </html>

@@ -16,14 +16,14 @@ function addPlayer() {
     let playerName = document.getElementById('id_playername').value;
     if (playerName.length < 1) {
         return
-    }        
+    }   
     players.push({
         "name": playerName,
         "score": 5
     });
     document.getElementById('id_playername').value = "";
     console.log(players);
-    return players;
+    return players; 
 }
 
 // Taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array

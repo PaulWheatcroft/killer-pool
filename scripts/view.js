@@ -1,28 +1,41 @@
 console.log("View")
 
 function showPlayers() {
+    console.log("1")
     const gameArray = JSON.parse(localStorage.getItem("playersArray"));
-    console.log(gameArray);
     let containerHTML = document.getElementById('player-list');
-    for (player in gameArray) {
-        console.log(player);
-        let playerHTML = `
-        <div id="id-${player}" class="col-12">
-                <div class="row">
-                    <p class="col-12 playernamelabel">${gameArray[player].name}</p>
+    if (gameArray) {
+        let gameArrayCount = Object.keys(gameArray).length;
+        console.log(gameArrayCount);
+        for (player in gameArray) {
+            let playerHTML = `
+            <div id="id-${player}" class="col-12">
+                    <div class="row">
+                        <p class="col-12 playernamelabel">${gameArray[player].name}</p>
+                    </div>
+                    <div class="row justify-content-center" id="lives-${player}">
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life"></div>
+                        <div class="col-2 player-life life-add-remove" onclick="removeSinglePlayer(${player})"><i class="fas fa-trash-alt"></i></div>
+                    </div>
                 </div>
-                <div class="row justify-content-center" id="lives-${player}">
-                    <div class="col-2 player-life"></div>
-                    <div class="col-2 player-life"></div>
-                    <div class="col-2 player-life"></div>
-                    <div class="col-2 player-life"></div>
-                    <div class="col-2 player-life"></div>
-                    <div class="col-2 player-life life-add-remove" onclick="removeSinglePlayer(${player})"><i class="fas fa-trash-alt"></i></div>
-                </div>
+            `
+            containerHTML.innerHTML += playerHTML
+        }
+    } else {
+        let noPlayersHTML = `
+        <div class="col-12">
+            <div class="row">
+                <p class="col-12 playernamelabel"><i class="fas fa-skull"></i> You need to add someone!!!! <i class="fas fa-skull"></i></p>
             </div>
+        </div>
         `
-        containerHTML.innerHTML += playerHTML
+        containerHTML.innerHTML = noPlayersHTML
     }
+
 }
 
 function startGame() {
@@ -122,6 +135,7 @@ function removeLife(playerId, lifeId) {
                     <div class="col-2 player-life life-done"><i class="fas fa-skull"></i></div>
                     `
     } 
+    return;
 }
 
 function addLife(playerId) {
